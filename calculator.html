@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+    <div ng-app="">
+        <div class="input-group">
+            <span class="input-group-text">number 1 and number 2</span>
+            <input type="number" class="form-control" ng-model="num1">
+            <input type="number" class="form-control" ng-model="num2"><br>
+        </div>
+        <div>
+            <h2><button ng-click="sum=num1 + num2">+</button></h2>
+            <h3>{{sum}}</h3>
+            <h2><button ng-click="product=num1 * num2">*</button></h2>
+            <h3>{{product}}</h3>
+            <h2><button ng-click="subtraction=num1 - num2">-</button></h2>
+            <h3>{{subtraction}}</h3>
+            <h2><button ng-click="division=num1 / num2">/</button></h2>
+            <h3>{{division}}</h3>
+        </div>
+</body>
+</html>
